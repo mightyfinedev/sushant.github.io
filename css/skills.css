@@ -1,0 +1,82 @@
+.skill{
+    height: 30vh;
+    width: 35vw;
+    position: absolute;
+    left:250px;
+    top:15%;
+    color: whitesmoke;
+    transition: 1s ease;
+}
+
+.headskill{
+    width: 50vw;
+    font-size: 66px;
+    font-weight: 700;
+    color: #FAFA37;
+    transition: 1s ease;
+}
+
+.skill p a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 700;
+}
+
+.skill1, .skill2, .skill4, .otherskill{
+    color: #66FF66 ;
+    font-weight: 700;
+}
+
+.skillgoku{
+    position: absolute;
+    left: 60vw;
+    top: 0%;
+    z-index: -1;
+    transition: 1s ease;
+}
+
+.quote{
+    color: silver;
+}
+
+@media  (max-width: 500px){
+
+    .skill{
+        width: 80vw;
+        position: absolute;
+        top:10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .headskill{
+        width: 80vw;
+        font-size: 35px;
+    }    
+
+    .skillgoku{
+        position: absolute;
+        top:23%;
+        left: 40vw;
+        z-index: -3;
+    }
+
+    .skillgoku img{
+        height: 400px;
+    }    
+}
+
+@media  (max-width: 1200px) and (min-width: 501px){
+
+    .skill{
+        position: absolute;
+        top:10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .skillgoku{
+        position: absolute;
+        left: 45vw;
+    }
+}

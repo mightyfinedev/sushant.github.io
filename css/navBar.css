@@ -1,0 +1,141 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   body {
+    /* background: #151515; */
+    background: rgb(171,62,175);
+    background: radial-gradient(circle, rgba(171,62,175,1) 0%, rgba(81,10,64,1) 72%); 
+    font-family: 'Inter','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+   li {
+    list-style: none;
+   }
+   
+   /* NAVBAR STYLING STARTS */
+   .navbar {
+    font-weight: 200;
+    max-width: 153.6px;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;   
+    background: #0A0A0A;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+   }
+
+   .nav-links a, .social {
+    color: #FBFCD4;
+   }
+
+   /* LOGO */
+   .logo {
+    max-height: -moz-fit-content;
+    max-height:fit-content;
+    background: orange;
+    font-size: 32px;
+   }
+
+   #description{
+    font-size: 17px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+   }
+
+   .main-menu li{
+    display: flex;
+    justify-content: center;
+    width: 153.6px;
+     padding: 12px  40px;
+     border-bottom: #383837 solid 1px;
+   }
+
+   .menu li a:hover {
+    color: rgba(251, 196, 3);
+    transition: 0.1s ease;
+   }
+
+   .social{
+    position: relative;
+    top: 15px;
+    display: inline-flex;
+    gap:10px;
+    justify-content: center;
+   }
+
+   .social li a img{
+    height:25px;
+   }
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    color: #FBFCD4;
+    font-size: 30px;
+    -webkit-user-select: auto;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 1200px) {
+  
+    .logo{
+    display:none; 
+   }
+   
+   .navbar{
+    background: none;
+   }
+
+    .menu { 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100vh; ;
+    width: 100vw;
+    font-weight: 400;
+    /* background: #0A0A0A; */
+    background: rgb(247,87,0);
+background: linear-gradient(323deg, rgba(247,87,0,1) 42%, rgba(17,59,214,1) 43%); 
+    text-align: center;
+    display: none;
+   }
+   
+
+   .main-menu li{
+    width:100vw;
+   }
+
+   .hamburger {
+    display: block;
+    position: relative;
+    right: 55px;
+    color: #FBFCD4;
+    z-index: 3;
+   }
+
+   input[type=checkbox]:checked ~ .menu{
+       display: block;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       transition: 0.4s ease;
+   }
+  
+   
+   }

@@ -1,0 +1,130 @@
+main{
+    position: absolute;
+    left: 300px;
+    top: 40%;
+    font-weight: 700;
+}
+
+h1{
+    font-size: 72px;
+    color: whitesmoke;
+    transition: 0.4s ease;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    color: gold;
+    transition: 0.4s ease;
+}
+
+.gokuHome{
+    position: absolute;
+    left: 600px;
+    top: -210%;
+    transition: 0.4s ease-out;
+}
+
+ 
+@media (max-width: 500px){
+
+    main{
+        position: absolute;
+        top: 15%;
+        left: 25vw;
+        z-index: -1;
+    }
+
+    h1{
+        font-size: 44px;
+        width: 30vw;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .gokuHome{
+        position: absolute;
+        left:-33%;
+        top: 150%;
+    }
+
+    img{
+        height: 55vh;
+    }
+
+} 
+
+
+
+@media (max-width: 1200px) and (min-width: 501px){
+
+    main{
+        position: absolute;
+        top: 10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    h1{
+        position: absolute;
+        top:25vh;
+        font-size: 68px;
+        width: 30vw;
+    }
+
+    h3{
+        position: absolute;
+        top:50vh;
+        font-size: 18px;
+        width: 50vw;
+    }
+
+    .gokuHome{
+        position: absolute;
+        left: 30vw;
+        top: 70%;
+    }
+
+    img{
+        height: 80vh;
+    }
+    
+}
+
+@media (max-height: 500px) {
+
+    main{
+        position: absolute;
+        top: 10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    h1{
+        position: absolute;
+        top:23vh;
+        font-size: 48px;
+        width: 30vw;
+    }
+
+    h3{
+        position: absolute;
+        top:57vh;
+        font-size: 14px;
+        width: 50vw;
+    }
+
+    .gokuHome{
+        position: absolute;
+        left: 30vw;
+        top: 70%;
+    }
+
+    img{
+        height: 80vh;
+    }
+    
+}
+

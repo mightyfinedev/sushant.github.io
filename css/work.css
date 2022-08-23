@@ -1,0 +1,71 @@
+.gokuVegeta{
+    position: absolute;
+    left: 60vw;
+    top: 8%;
+    z-index: -1;
+}
+
+.work{
+    height: 30vh;
+    width: 31vw;
+    position: absolute;
+    left:250px;
+    top:25%;
+    color: whitesmoke;
+}
+
+.workhead{
+    width: 50vw;
+    font-size: 66px;
+    font-weight: 700;
+    color: #FAFA37;
+    transition: 1s ease;
+}
+
+@media  (max-width: 500px){
+
+    .work{
+        width: 80vw;
+        position: absolute;
+        top:10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .workhead{
+        width: 60vw;
+        font-size: 44px;
+    }    
+
+    .gokuVegeta{
+        position: absolute;
+        top:60%;
+        left: 30vw;
+    }
+
+    .gokuVegeta img{
+        height: 300px;
+    }    
+}
+
+
+@media  (max-width: 1200px) and (min-width: 501px){
+
+    .work{
+        position: absolute;
+        top:10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .gokuVegeta{
+        position: absolute;
+        top:20%;
+        left: 35vw;
+    }
+
+    .gokuVegeta img{
+        height: 500px;
+    }    
+
+}

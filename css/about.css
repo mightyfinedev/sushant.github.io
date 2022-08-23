@@ -1,0 +1,72 @@
+.about{
+    height: 30vh;
+    width: 31vw;
+    position: absolute;
+    left:250px;
+    top:25%;
+    color: whitesmoke;
+    transition: 1s ease;
+}
+
+.heading{
+    width: 50vw;
+    font-size: 66px;
+    font-weight: 700;
+    color: #FAFA37;
+    transition: 1s ease;
+}
+
+.about p a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: 700;
+}
+
+.kidgoku{
+    position: absolute;
+    left: 60vw;
+    top: 0%;
+    z-index: -1;
+    transition: 1s ease;
+}
+
+@media  (max-width: 500px){
+
+    .about{
+        width: 80vw;
+        position: absolute;
+        top:5%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .heading{
+        width: 60vw;
+        font-size: 44px;
+    }    
+
+    .kidgoku{
+        position: absolute;
+        top:60%;
+        left: 30vw;
+    }
+
+    .kidgoku img{
+        height: 300px;
+    }    
+}
+
+@media  (max-width: 1200px) and (min-width: 501px){
+
+    .about{
+        position: absolute;
+        top:10%;
+        left: 11vw;
+        z-index: -1;
+    }
+
+    .kidgoku{
+        position: absolute;
+        left: 60vw;
+    }
+}
